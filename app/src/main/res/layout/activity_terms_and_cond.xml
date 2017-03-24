@@ -10,4 +10,27 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.ak.ss.activity.TermsAndCondActivity">
 
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_terms"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/terms_and_condition" />
+    </ScrollView>
+
+    <Button
+
+        android:id="@+id/btn_terms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="onBtnClick"
+        android:text="I Agree" />
+
 </RelativeLayout>
